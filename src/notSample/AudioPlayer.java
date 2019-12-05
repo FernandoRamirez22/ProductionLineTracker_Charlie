@@ -1,5 +1,6 @@
 package notSample;
 
+
 public class AudioPlayer extends Product implements MultimediaControl {
     String audioSpecification;
     String mediaType;
