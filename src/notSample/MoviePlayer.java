@@ -1,5 +1,11 @@
 package notSample;
 
+/**
+ * @author Fernando Ramirez
+ * Date 9/10/2019
+ *
+ * This c;ass creates several different objects in which we didn't use in our project
+ */
 public class MoviePlayer extends Product implements MultimediaControl {
 
     private Screen screen;

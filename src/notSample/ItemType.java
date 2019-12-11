@@ -1,5 +1,11 @@
 package notSample;
 
+/**
+ * @author Fernando Ramirez
+ * Date 10/10/2019
+ *
+ * This enum will create the type "ItemType" for me to use in the program
+ */
 public enum ItemType {
     AUDIO("AU"),
 

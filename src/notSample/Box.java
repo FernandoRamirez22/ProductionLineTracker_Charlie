@@ -1,5 +1,11 @@
 package notSample;
 
+/**
+ * @author Fernando Ramirez
+ * Date 10/06/2019
+ *
+ * This class will generate the getters and setters for the three objects used
+ */
 public class Box implements Item {
 
     // getters and setters, implementing methods

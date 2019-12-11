@@ -1,5 +1,11 @@
 package notSample;
 
+/**
+ * @author Fernando Ramirez
+ * Date 10/10/2019
+ *
+ * Class is meant to create an object screen which has different attibutes, similar to Product
+ */
 public class Screen implements ScreenSpec {
     private String resolution;
     private int refreshRate;

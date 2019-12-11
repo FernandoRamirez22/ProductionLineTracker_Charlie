@@ -1,6 +1,11 @@
 package notSample;
 
-
+/**
+ * @author Fernando Ramirez
+ * Date 10/05/2019
+ *
+ * This class will specify the object AudioPlayer and define some of its specifications
+ */
 public class AudioPlayer extends Product implements MultimediaControl {
     String audioSpecification;
     String mediaType;

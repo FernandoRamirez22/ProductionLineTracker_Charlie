@@ -1,5 +1,13 @@
 package notSample;
 
+/**
+ * @author Fernando Ramirez
+ * Date 10/10/2019
+ *
+ * This class creates the object Product which is highly
+ * versatile and is a funcamental component of this project
+ */
+
 public abstract class Product implements Item {
 
     // Fields that my Product will use
@@ -10,6 +18,14 @@ public abstract class Product implements Item {
 
     public Product(String name, String manufacturer, ItemType itemType) {
 
+        this.name = name;
+        this.manufacturer = manufacturer;
+        this.itemType = itemType;
+    }
+
+    public Product(int prodID, String name, String manufacturer, ItemType itemType) {
+
+        this.id = prodID;
         this.name = name;
         this.manufacturer = manufacturer;
         this.itemType = itemType;
@@ -66,7 +82,12 @@ public abstract class Product implements Item {
 }
 
 class Widget extends Product {
-    Widget(String name, String manufacturer, ItemType type) {
+    public Widget(String name, String manufacturer, ItemType type) {
         super(name, manufacturer, type);
     }
+
+    public Widget(int prodID, String name, String manufacturer, ItemType type) {
+        super(prodID, name, manufacturer, type);
+    }
 }
+

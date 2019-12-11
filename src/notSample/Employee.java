@@ -2,10 +2,16 @@ package notSample;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
 /**
- * @author Fernando Ramirez, this class contains functionality of how the Employee class will behave in this program
+ * @author Fernando Ramirez
+ * Date 11/28/2019
+ *
+ * this class contains functionality of how the Employee class will behave in this program,
+ * including password configuration
  */
-     class Employee {
+
+class Employee {
     private StringBuilder name;
     private String username;
     private String password;
@@ -41,27 +47,27 @@ import java.util.regex.Pattern;
     /**
      * getName method of String Builder type
      *
-     *  @return a string builder valued
+     * @return a string builder valued
      */
-    public StringBuilder getName(){
+    public StringBuilder getName() {
         return name;
     }
 
     /**
-     * getName method of String Builder type
+     * getPassword method of String type
      *
-     *  @return a String value for password
+     * @return a String value for password
      */
-    public String getPassword(){
+    public String getPassword() {
         return password;
     }
 
     /**
      * getUsername method of String type
      *
-     *  @return String value or username
+     * @return String value or username
      */
-    public String getUsername(){
+    public String getUsername() {
         return username;
     }
 
@@ -132,11 +138,6 @@ import java.util.regex.Pattern;
         if (!password.matches(".*[~!.......].*")) return false;
 
         return true;
-
-//        final String regex = "(?=.*[a-z])(?=.*[A-Z])(?=.*\\W).*$";
-//        final Pattern pattern = Pattern.compile(regex);
-//        final Matcher matcher = pattern.matcher(password);
-//        return matcher.matches();
     }
 
     /**
@@ -149,6 +150,5 @@ import java.util.regex.Pattern;
     public String toString() {
         String str1 = String.format("Employee Details" + "\nName : " + name + "\nUsername : " + username + "\nEmail : " + email + "\nInitial Password : " + password);
         return str1;
-
     }
 }

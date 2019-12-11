@@ -1,5 +1,11 @@
 package notSample;
 
+/**
+ * @author Fernando Ramirez
+ * Date 10/10/2019
+ *
+ * This interface will manipulate the variable from the object Item
+ */
 public interface Item {
 
     public int getId();

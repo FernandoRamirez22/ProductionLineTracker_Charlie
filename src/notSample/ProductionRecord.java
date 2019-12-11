@@ -11,8 +11,9 @@ public class ProductionRecord {
 
     /**
      * Class constructor
+     *
      * @param productID
-    * */
+     */
     public ProductionRecord(int productID) {
         this.productID = productID;
         this.productionNum = 0;
@@ -22,11 +23,12 @@ public class ProductionRecord {
 
     /**
      * Class constructor
+     *
      * @param productionNum
      * @param productName
      * @param serialNum
      * @param prodDate
-     * */
+     */
     public ProductionRecord(int productionNum, String productName, String serialNum, Date prodDate) {
         this.productionNum = productionNum;
         this.productName = productName;
@@ -36,9 +38,10 @@ public class ProductionRecord {
 
     /**
      * Class construtor
+     *
      * @param product object is being passed as an argument
-     * @param count integer value being passed as argument
-     * */
+     * @param count   integer value being passed as argument
+     */
     public ProductionRecord(Product product, int count) {
         String IDNumber = String.format("%05d", count);
         this.serialNum = product.getManufacturer().substring(0, 3) + product.getItemType() + IDNumber;
@@ -47,7 +50,9 @@ public class ProductionRecord {
     }
 
     // Getters
-    public String getProductName(){return productName;}
+    public String getProductName() {
+        return productName;
+    }
 
     public int getProductionNum() {
         return productionNum;
@@ -66,7 +71,9 @@ public class ProductionRecord {
     }
 
     // Setters
-    public void setProductName(String productName){this.productName = productName;}
+    public void setProductName(String productName) {
+        this.productName = productName;
+    }
 
     public void setProductionNum(int productionNum) {
         this.productionNum = productionNum;
