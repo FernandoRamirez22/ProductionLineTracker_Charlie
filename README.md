@@ -7,4 +7,4 @@ This is a standard production tracker. it takes in products which are entered by
 
 LINK FOR GENERATED JAVADOC:   file:///C:/Users/Noliano/OneDrive%20-%20Florida%20Gulf%20Coast%20University/ObjectOriented/ProductionLineTracker_Charlie/index.html
 
- ![](images/class diagram.JPG)
+ ![](ProductionLineTracker_Charlie/class diagram.JPG)
