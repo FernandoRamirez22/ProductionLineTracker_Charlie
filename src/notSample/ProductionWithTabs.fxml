@@ -6,6 +6,7 @@
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.TableColumn?>
@@ -87,7 +88,14 @@
                 </Tab>
                 <Tab fx:id="Employee" text="Employee">
                     <content>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="215.0" layoutY="59.0" text="Username" />
+                        <Label layoutX="223.0" layoutY="192.0" text="Password" />
+                        <TextField fx:id="employeeUsername" layoutX="174.0" layoutY="91.0" />
+                        <Button fx:id="createEmployeeBtn" layoutX="21.0" layoutY="55.0" mnemonicParsing="false" onAction="#createEmployeeBtn" text="Login" />
+                        <PasswordField layoutX="174.0" layoutY="240.0" />
+                     </children></AnchorPane>
                     </content>
                 </Tab>
             </tabs>
