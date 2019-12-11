@@ -3,7 +3,7 @@ package notSample;
 /**
  * @author Fernando Ramirez
  * Date 10/05/2019
- *
+ * <p>
  * This class will specify the object AudioPlayer and define some of its specifications
  */
 public class AudioPlayer extends Product implements MultimediaControl {
